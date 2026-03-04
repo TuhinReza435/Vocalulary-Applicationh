@@ -175,18 +175,44 @@
       </h2>
       <div id="level-container" class="flex gap-2 mb-8 justify-center"></div>
     </section>
+    <section id="spiner" class="flex justify-center items-center py-10 hidden">
+      <span class="loading loading-bars loading-lg"></span>
+    </section>
+
+    <section class="flex justify-center">
+      <div class="join">
+        <div>
+          <label class="input validator join-item">
+            <input id="inputsearch" type="text" placeholder="search Vocabullary now" required />
+          </label>
+        
+        </div>
+        <button id="btn-search" class="btn btn-primary join-item">Join</button>
+      </div>
+    </section>
 
     <section
       id="word-container"
       class="bg-gray-50 p-10 my-10 w-11/12 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
     >
-      <div class="col-span-3 flex flext flex-col gap-5 ">
+      <div class="col-span-3 flex flext flex-col gap-5">
         <p class="bangla text-2xl">আপনি এখনো কোন Lesson Select করেন ন</p>
         <h2 class="bangla text-3xl font-bold">একটি Lesson Select করুন।</h2>
-     </div>
-
-      
+      </div>
     </section>
+
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <div id="details_container_xyz"></div>
+        <div class="modal-action">
+          <form method="dialog">
+            <button class="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
 
     <script src="./vocabulary.js"></script>
   </body>
